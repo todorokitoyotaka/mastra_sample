@@ -160,7 +160,7 @@ async function initializeMastra() {
         const result = await response;
         console.log('Final result:', result);
                 
-        return { answer: JSON.stringify(result.text) };
+        return { answer: JSON.stringify(result.steps) };
       } catch (error) {
         console.error('Error in process-results-step:', error);
         // エラーの場合でもデフォルトの回答を返す
